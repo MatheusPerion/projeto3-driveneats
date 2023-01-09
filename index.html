@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet" />
+
+  <title>Driven Eats</title>
+</head>
+
+<body>
+  <header class="desktop">
+    <div class="logo">
+      <h1>Driven Eats</h1>
+      <h2>Sua comida em 6 minutos</h2>
+    </div>
+    <div class="darkmode">
+      <input type="checkbox" class="checkbox" id="chk">
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+  </header>
+
+
+  <main>
+
+    <section>
+      <h1>Primeiro, seu prato</h1>
+      <div class="options" id="dish">
+        <div class="option dish" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/galinhada.jpg">
+          </div>
+          <h1 class="item" >Galinhada do Guru</h1>
+          <p class="info">Melhor galinhada do mundo</p>
+          <p class="price">R$ 17,90</p>
+          <p class="check"></p>
+        </div>
+
+        <div class="option dish" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/Feijoada.jpg">
+          </div>
+          <h1 class="item"> Feijoada Vegana</h1>
+          <p class="info">Feijoada sem linguinça</p>
+          <p class="price">R$ 20,90</p>
+          <p class="check"></p>
+        </div>
+
+        <div class="option dish" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/pate.jpg">
+          </div>
+          <h1 class="item"> Pate de Frango</h1>
+          <p class="info">Um Pate de frango delicioso</p>
+          <p class="price">R$ 19,90</p>
+          <p class="check"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h1>Segundo, sua bebida</h1>
+      <div class="options" id="drink">
+        <div class="option drink" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/suco-de-mamão.jpg">
+          </div>
+          <h1 class="item"> Suco de Mamão</h1>
+          <p class="info">O melhor suco do mundo</p>
+          <p class="price">R$ 7,90</p>
+          <p class="check"></p>
+        </div>
+
+        <div class="option drink" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/sprite.png">
+          </div>
+          <h1 class="item">Sprite</h1>
+          <p class="info">Sprite geladinho sabor limão</p>
+          <p class="price">R$ 4,90</p>
+          <p class="check"></p>
+        </div>
+
+        <div class="option drink" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/limpol.jpg">
+          </div>
+          <h1 class="item">Limpol</h1>
+          <p class="info">para intestino preso</p>
+          <p class="price">R$ 18,90</p>
+          <p class="check"></p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h1>Terceiro, sua sobremessa</h1>
+      <div class="options" id="dessert">
+        <div class="option dessert" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/Pudim-de-leite-com-gelatina.jpg">
+          </div>
+          <h1 class="item"> Pudim do Boi</h1>
+          <p class="info">Pudim cru</p>
+          <p class="price">R$ 15,90</p>
+          <p class="check"></p>
+        </div>
+
+        <div class="option dish" onclick="toggleOption(this)">
+          <div class="img-menu">
+            <img src="img/mousse.jpg">
+          </div>
+          <h1 class="item">Mousse de limão</h1>
+          <p class="info">Limões maldivos</p>
+          <p class="price">R$ 4,90</p>
+          <p class="check"></p>
+        </div>
+
+        <div class="option dish" onclick="toggleOption(this)" id="m1">
+          <div class="img-menu">
+            <img src="img/bolo-de-morango.jpg">
+          </div>
+          <h1 class="item">Bolo de murangu</h1>
+          <p class="info">HUMMM BOLO DE MURANGU</p>
+          <p class="price">R$ 12,90</p>
+          <p class="check"></p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <button id="finishOrder" disabled onclick="toggleButton()">Selecione os 3 itens para fechar o pedido</button>
+  </footer>
+
+  <div class="modal">
+    <h1>Confirme seu pedido</h1>
+  </div>
+
+  <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
