@@ -62,7 +62,7 @@ function verify() {
 
 function toggleButton(){
      order.name = prompt ('Qual é o seu Nome?')
-     order.address =prompt ('onde cê mora ?')
+     order.address =prompt ('Qual o seu Endereço ?')
 
 
      const totalOrder = (Number(order.dish.price.split(' ')[1].replace(',' , '.')) + Number(order.drink.price.split(' ')[1].replace(',' , '.')) + Number(order.dessert.price.split(' ')[1].replace(',' , '.'))).toFixed(2)

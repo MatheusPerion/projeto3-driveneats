@@ -38,33 +38,33 @@
     <section>
       <h1>Primeiro, seu prato</h1>
       <div class="options" id="dish">
-        <div class="option dish" onclick="toggleOption(this)">
+        <div data-base="dish" class="option dish" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/galinhada.jpg">
           </div>
-          <h1 class="item" >Galinhada do Guru</h1>
+          <h1 data-base="item-name" class="item" >Galinhada do Guru</h1>
           <p class="info">Melhor galinhada do mundo</p>
-          <p class="price">R$ 17,90</p>
+          <p data-test="item-price" class="price">R$ 17,90</p>
           <p class="check"></p>
         </div>
 
-        <div class="option dish" onclick="toggleOption(this)">
+        <div data-base="dish" class="option dish" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/Feijoada.jpg">
           </div>
-          <h1 class="item"> Feijoada Vegana</h1>
+          <h1 data-base="item-name" class="item"> Feijoada Vegana</h1>
           <p class="info">Feijoada sem linguinça</p>
-          <p class="price">R$ 20,90</p>
+          <p data-test="item-price" class="price">R$ 20,90</p>
           <p class="check"></p>
         </div>
 
-        <div class="option dish" onclick="toggleOption(this)">
+        <div data-base="dish" class="option dish" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/pate.jpg">
           </div>
-          <h1 class="item"> Pate de Frango</h1>
+          <h1 data-base="item-name" class="item"> Pate de Frango</h1>
           <p class="info">Um Pate de frango delicioso</p>
-          <p class="price">R$ 19,90</p>
+          <p data-test="item-price" class="price">R$ 19,90</p>
           <p class="check"></p>
         </div>
 
@@ -74,33 +74,33 @@
     <section>
       <h1>Segundo, sua bebida</h1>
       <div class="options" id="drink">
-        <div class="option drink" onclick="toggleOption(this)">
+        <div data-base="drink" class="option drink" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/suco-de-mamão.jpg">
           </div>
-          <h1 class="item"> Suco de Mamão</h1>
+          <h1 data-base="item-name" class="item"> Suco de Mamão</h1>
           <p class="info">O melhor suco do mundo</p>
-          <p class="price">R$ 7,90</p>
+          <p data-test="item-price" class="price">R$ 7,90</p>
           <p class="check"></p>
         </div>
 
-        <div class="option drink" onclick="toggleOption(this)">
+        <div data-base="drink" class="option drink" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/sprite.png">
           </div>
-          <h1 class="item">Sprite</h1>
+          <h1 data-base="item-name" class="item">Sprite</h1>
           <p class="info">Sprite geladinho sabor limão</p>
-          <p class="price">R$ 4,90</p>
+          <p data-test="item-price" class="price">R$ 4,90</p>
           <p class="check"></p>
         </div>
 
-        <div class="option drink" onclick="toggleOption(this)">
+        <div data-base="drink" class="option drink" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/limpol.jpg">
           </div>
-          <h1 class="item">Limpol</h1>
+          <h1 data-base="item-name" class="item">Limpol</h1>
           <p class="info">para intestino preso</p>
-          <p class="price">R$ 18,90</p>
+          <p data-test="item-price" class="price">R$ 18,90</p>
           <p class="check"></p>
         </div>
 
@@ -109,34 +109,34 @@
 
     <section>
       <h1>Terceiro, sua sobremessa</h1>
-      <div class="options" id="dessert">
+      <div data-base="dessert" class="options" id="dessert">
         <div class="option dessert" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/Pudim-de-leite-com-gelatina.jpg">
           </div>
-          <h1 class="item"> Pudim do Boi</h1>
+          <h1 data-base="item-name" class="item"> Pudim do Boi</h1>
           <p class="info">Pudim cru</p>
-          <p class="price">R$ 15,90</p>
+          <p data-test="item-price" class="price">R$ 15,90</p>
           <p class="check"></p>
         </div>
 
-        <div class="option dish" onclick="toggleOption(this)">
+        <div data-base="dessert" class="option dish" onclick="toggleOption(this)">
           <div class="img-menu">
             <img src="img/mousse.jpg">
           </div>
-          <h1 class="item">Mousse de limão</h1>
+          <h1 data-base="item-name" class="item">Mousse de limão</h1>
           <p class="info">Limões maldivos</p>
-          <p class="price">R$ 4,90</p>
+          <p data-test="item-price" class="price">R$ 4,90</p>
           <p class="check"></p>
         </div>
 
-        <div class="option dish" onclick="toggleOption(this)" id="m1">
+        <div data-base="dessert" class="option dish" onclick="toggleOption(this)" id="m1">
           <div class="img-menu">
             <img src="img/bolo-de-morango.jpg">
           </div>
-          <h1 class="item">Bolo de murangu</h1>
+          <h1 data-base="item-name" class="item">Bolo de murangu</h1>
           <p class="info">HUMMM BOLO DE MURANGU</p>
-          <p class="price">R$ 12,90</p>
+          <p data-test="item-price" class="price">R$ 12,90</p>
           <p class="check"></p>
         </div>
 
@@ -146,7 +146,7 @@
   </main>
 
   <footer>
-    <button id="finishOrder" disabled onclick="toggleButton()">Selecione os 3 itens para fechar o pedido</button>
+    <button data-base="order-btn" id="finishOrder" disabled onclick="toggleButton()">Selecione os 3 itens para fechar o pedido</button>
   </footer>
 
   <div class="modal">
